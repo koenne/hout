@@ -1,9 +1,27 @@
-body{
+body {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    height: 100vh; /* set body height to viewport height */
 }
-.content{
-    text-align: center;
-    margin-top: auto;
-    margin-left: auto;
+
+.header {
+    margin-bottom: 20px; /* Add some space below the header */
+    text-align: center; /* Center header content */
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto; /* Center content horizontally */
+}
+
+#producten {
+    width: 250px;
+    margin: 10px;
+    overflow: hidden;
+    float: left;
+}
+.submit-button {
+    text-align: center; /* Center the submit button */
 }
