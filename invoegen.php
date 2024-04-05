@@ -9,10 +9,10 @@
 <body>
     <div class="header">
         <h1>Hout invoegen</h1>
-            <a href="index.html"><button>Home</button></a>
-            <a href="invoegen.php"><button>Invoegen</button></a>
-            <a href="overzicht.php"><button>Overzicht</button></a><br>
-        </div>
+        <a href="index.html"><button>Home</button></a>
+        <a href="invoegen.php"><button>Invoegen</button></a>
+        <a href="overzicht.php"><button>Overzicht</button></a><br>
+    </div>
     <div class="content">
         <?php
             include 'db.php'; 
@@ -33,7 +33,7 @@
                     echo "Bijzonderheden:".$row['bijzonderheden']."<br>";
                 }
 
-                echo "<input type='number' name='amount". $row["houtID"] ."' value='0' min='0'>";
+                echo "<input type='number' name='". $row["houtID"] ."' value='0' min='0'>";
                 echo "</div>";     
             }
         ?>
