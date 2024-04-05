@@ -1,9 +1,13 @@
 body {
     background-color: black;
+    background-image: url("img/background.jpg");
+    background-size: cover;
     color: white;
     display: flex;
     flex-direction: column; /* stack items vertically */
     height: 100vh; /* set body height to viewport height */
+    color: white;
+    font-size: larger;
 }
 
 .header {
